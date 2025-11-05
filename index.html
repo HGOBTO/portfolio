@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hugo – UX Designer</title>
+  <meta name="description" content="UX Designer crafting intuitive, human-centered digital experiences." />
+  <link rel="preload" href="images/project1.jpg" as="image" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/">Hugo</a>
+    <nav class="nav">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <button id="themeToggle" class="toggle" aria-label="Toggle theme">🌙</button>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <img class="avatar" src="images/avatar.jpg" alt="Portrait of Hugo" />
+      <h1>Hi, I’m Hugo 👋</h1>
+      <p class="tagline">UX Designer focused on simplifying complex workflows and turning research into elegant product decisions.</p>
+      <div class="quick-links">
+        <a class="button" href="#work">View Work</a>
+        <a class="button secondary" href="mailto:hugo@example.com">Email Me</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="work" class="section">
+    <h2>Selected Work</h2>
+
+    <article class="project-card">
+      <img src="images/project1.jpg" alt="Veterans Portal Redesign thumbnail" />
+      <div class="project-info">
+        <h3>Veterans Portal Redesign</h3>
+        <p>Led UX research and interaction design for a federal portal used by 500k+ veterans. Reduced time-to-task by 32%.</p>
+        <ul class="meta">
+          <li>Role: Lead UX</li>
+          <li>Focus: Research, IA, Interaction</li>
+        </ul>
+        <a class="button" href="case-study.html?project=vets-portal">Read Case Study</a>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <img src="images/project2.jpg" alt="AI Customer Dashboard thumbnail" />
+      <div class="project-info">
+        <h3>AI Customer Dashboard</h3>
+        <p>Designed an adaptive dashboard for AI-powered customer insights at enterprise scale. Increased feature adoption by 21%.</p>
+        <ul class="meta">
+          <li>Role: Product Designer</li>
+          <li>Focus: Prototyping, Data Viz</li>
+        </ul>
+        <a class="button" href="case-study.html?project=ai-dashboard">Read Case Study</a>
+      </div>
+    </article>
+  </section>
+
+  <section id="about" class="section">
+    <h2>About</h2>
+    <p>I’m a UX designer who bridges research and execution. I love bringing clarity to messy problem spaces—especially government, enterprise, and AI-enabled tools. My superpower is aligning teams around simple, testable experiences.</p>
+  </section>
+
+  <section id="contact" class="section contact">
+    <h2>Let’s Connect</h2>
+    <p>📧 <a href="mailto:hugo@example.com">hugo@example.com</a></p>
+    <p><a href="https://linkedin.com/in/hugo" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://dribbble.com/hugo" target="_blank" rel="noopener">Dribbble</a></p>
+  </section>
+
+  <footer class="footer">© <span id="year"></span> Hugo — UX Portfolio</footer>
+  <script src="script.js"></script>
+</body>
+</html>
