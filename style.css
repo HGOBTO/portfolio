@@ -46,6 +46,21 @@ body {
   border-radius: 999px; padding: 6px 10px; cursor: pointer;
 }
 
+/* BRAND LOGO */
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  font-weight: 800;
+  color: var(--text);
+}
+.brand-logo {
+  height: 28px;           /* adjust size */
+  width: auto;
+  border-radius: 6px;     /* optional, if you want rounded corners */
+}
+
 /* HERO */
 .hero { padding: 64px 20px 24px; }
 .hero-inner {
@@ -112,3 +127,27 @@ h1 { margin: 16px 0 8px; font-size: 40px; }
   h1 { font-size: 30px; }
   .project-card { flex-direction: column; }
 }
+
+/* --- Chat widget --- */
+#chatFab{
+  position: fixed; right: 18px; bottom: 18px; width: 56px; height: 56px;
+  border-radius: 50%; display:flex; align-items:center; justify-content:center;
+  background: var(--accent); color: var(--accent-ink); font-size: 22px; cursor: pointer;
+  box-shadow: var(--shadow); z-index: 9999; user-select:none;
+}
+#chatPanel{
+  position: fixed; right: 18px; bottom: 84px; width: min(380px, 92vw);
+  background: var(--bg-elev); border: 1px solid var(--border); border-radius: 14px;
+  box-shadow: var(--shadow); display: grid; grid-template-rows: auto 1fr auto; z-index: 9999;
+  max-height: min(70vh, 560px); overflow: hidden;
+}
+.chat-header{ display:flex; align-items:center; justify-content:space-between; padding:10px 12px; border-bottom:1px solid var(--border); }
+.chat-log{ padding: 12px; overflow-y: auto; display:flex; flex-direction:column; gap:10px; }
+.chat-form{ display:flex; gap:8px; padding:10px 12px; border-top:1px solid var(--border); }
+#chatInput{ flex:1; padding:10px 12px; border-radius:10px; border:1px solid var(--border); background: transparent; color: var(--text); }
+.chat-send{ padding:10px 14px; border-radius:10px; border:1px solid var(--border); background: var(--accent); color: var(--accent-ink); font-weight:700; }
+.msg{ max-width: 85%; padding:10px 12px; border-radius:12px; border:1px solid var(--border); }
+.msg.user{ align-self:flex-end; background: transparent; }
+.msg.bot{ align-self:flex-start; background: rgba(255,255,255,.03); }
+.msg small{ display:block; opacity:.6; font-size:12px; margin-top:6px; }
+.msg.typing{ font-style: italic; opacity:.75; }

@@ -3,14 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Hugo H Brito</title>
+  <title>Hugo Brito - Portfolio</title>
   <meta name="description" content="Senior UX Researcher & Design Strategist" />
   <link rel="preload" href="images/project1.jpg" as="image" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="/">Hugo</a>
+    <a class="brand" href="/">
+  <img src="img/Untitled-1.png" alt="Hugo logo" class="brand-logo" />
+</a>
     <nav class="nav">
       <a href="#work">Work</a>
       <a href="#about">About</a>
@@ -56,7 +58,20 @@
     <article class="project-card">
       <img src="images/project2.jpg" alt="AI Customer Dashboard thumbnail" />
       <div class="project-info">
-        <h3>AI Customer Dashboard</h3>
+        <h3>User Onboarding workflows</h3>
+        <p>Designed an adaptive dashboard for AI-powered customer insights at enterprise scale. Increased feature adoption by 21%.</p>
+        <ul class="meta">
+          <li>Role: Product Designer</li>
+          <li>Focus: Prototyping, Data Viz</li>
+        </ul>
+        <a class="button" href="case-study.html?project=ai-dashboard">Read Case Study</a>
+      </div>
+    </article>
+
+      <article class="project-card">
+      <img src="images/project2.jpg" alt="AI Customer Dashboard thumbnail" />
+      <div class="project-info">
+        <h3>User Success Service Desk</h3>
         <p>Designed an adaptive dashboard for AI-powered customer insights at enterprise scale. Increased feature adoption by 21%.</p>
         <ul class="meta">
           <li>Role: Product Designer</li>
@@ -69,9 +84,26 @@
 
   <section id="contact" class="section contact">
     <h2>Let’s Connect</h2>
-    <p>📧 <a href="mailto:hugo@example.com">hugo@example.com</a></p>
+    <p> <a href="mailto:hugo@example.com">hugo@example.com</a></p>
     <p><a href="https://www.linkedin.com/in/hgobto/" target="_blank" rel="noopener">LinkedIn</a></p>
   </section>
+
+  <!-- Chat widget -->
+<div id="chatFab" aria-label="Open chat" title="Chat">💬</div>
+
+<div id="chatPanel" role="dialog" aria-modal="true" aria-labelledby="chatTitle" hidden>
+  <header class="chat-header">
+    <h3 id="chatTitle">Chat</h3>
+    <button id="chatClose" aria-label="Close chat">✕</button>
+  </header>
+
+  <div id="chatLog" class="chat-log" aria-live="polite"></div>
+
+  <form id="chatForm" class="chat-form" autocomplete="off">
+    <input id="chatInput" type="text" placeholder="Type your message…" required />
+    <button class="chat-send" type="submit">Send</button>
+  </form>
+</div>
 
   <footer class="footer">© <span id="year"></span> Hugo H Brito— UX Portfolio</footer>
   <script src="script.js"></script>
