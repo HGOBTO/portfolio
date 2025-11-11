@@ -21,14 +21,14 @@
   <main class="case">
     <article class="case-article">
       <header class="case-hero">
-        <h1>Project Title</h1>
-        <p class="case-subtitle">One-liner describing the problem and target users.</p>
+        <h1>User Portal</h1>
+        <p class="case-subtitle">created to connect multiple sets of user types by providing information, resources, news, and a means to consolidated tier one support and communications.</p>
         <ul class="chips">
           <li>Role: UX Lead</li>
-          <li>Scope: Research → IA → Prototype → Test</li>
+          <li>Focus: Research, Design, development and testing.</li>
           <li>Timeline: 12 weeks</li>
         </ul>
-        <img class="case-hero-img" src="images/project1.jpg" alt="Hero image for the project" />
+        <img class="case-hero-img" src="img/whereami.png" alt="Confusing crossroads image" />
       </header>
 
       <nav class="case-toc">
@@ -42,12 +42,16 @@
 
       <section id="overview" class="case-section">
         <h2>Overview</h2>
-        <p>Brief summary of the project, the audience, and business context. Mention constraints (timeline, resources, compliance, etc.).</p>
+        <p>Brief summary of the project, the audience, and business context. Mention constraints (timeline, resources, compliance, etc.).
+
+        </p>
       </section>
 
       <section id="problem" class="case-section">
         <h2>Problem</h2>
-        <p>What problem were we solving? Why now? What happened if we didn’t solve it? Add baseline metrics if available.</p>
+        <p>What problem were we solving? Why now? What happened if we didn’t solve it? Add baseline metrics if available.
+
+        </p>
       </section>
 
       <section id="process" class="case-section">
@@ -93,5 +97,22 @@
 
   <footer class="footer">© <span id="year"></span> Hugo — UX Portfolio</footer>
   <script src="script.js"></script>
+  
+    <!-- Chat widget -->
+<div id="chatFab" aria-label="Open chat" title="Chat">💬</div>
+
+<div id="chatPanel" role="dialog" aria-modal="true" aria-labelledby="chatTitle" hidden>
+  <header class="chat-header">
+    <h3 id="chatTitle">Chat</h3>
+    <button id="chatClose" aria-label="Close chat">✕</button>
+  </header>
+
+  <div id="chatLog" class="chat-log" aria-live="polite"></div>
+
+  <form id="chatForm" class="chat-form" autocomplete="off">
+    <input id="chatInput" type="text" placeholder="Type your message…" required />
+    <button class="chat-send" type="submit">Send</button>
+  </form>
+</div>
 </body>
 </html>
