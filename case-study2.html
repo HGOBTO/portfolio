@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Case Study – User Portal | Hugo</title>
-  <meta name="description" content="Concise UX case study for a centralized user portal." />
+  <title>Case Study – Onboarding Optimization | Hugo</title>
+  <meta name="description" content="Concise UX case study focused on optimizing the onboarding process." />
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <header class="site-header">
     <a class="brand" href="/">Hugo</a>
@@ -20,17 +21,18 @@
 
   <main class="case">
     <article class="case-article">
+
       <header class="case-hero">
-        <h1>User Portal</h1>
+        <h1>Onboarding Optimization</h1>
         <p class="case-subtitle">
-          Centralized hub where engineers and stakeholders access information, communicate, request support, and perform key job-related tasks.
+          Redesigned and automated the onboarding workflow for contractors and new platform users, reducing onboarding time from weeks to days.
         </p>
         <ul class="chips">
           <li>Role: UX Lead</li>
-          <li>Focus: Research, Design, Development, Testing</li>
+          <li>Focus: Research, Workflow Design, Automation</li>
           <li>Timeline: 12 weeks</li>
         </ul>
-        <img class="case-hero-img" src="img/whereami.png" alt="Confusing crossroads image" />
+        <img class="case-hero-img" src="img/onboarding.png" alt="Onboarding workflow graphic" />
       </header>
 
       <nav class="case-toc">
@@ -42,95 +44,113 @@
         <a href="#reflection">Reflection</a>
       </nav>
 
+      <!-- OVERVIEW -->
       <section id="overview" class="case-section">
         <h2>Overview</h2>
         <p>
-          I designed a front-facing static user portal for engineers, analysts, program managers, and leadership. The portal consolidates documentation, system status, communications, and service requests into a single, accessible entry point.
+          I redesigned the onboarding experience for contractor personnel and new platform users. The goal was to streamline operations, reduce manual work, and enable a faster, more accurate onboarding flow with minimal human intervention.
         </p>
         <p>
-          I led the full UX lifecycle—research, information architecture, wireframes, prototypes, usability testing, and front-end implementation—within a 12-week window. Cross-functional partners supported compliance and security alignment, while I focused on clarity, findability, and adoption.
+          The effort was shaped by limited permissions, platform constraints, and fragmented environments. Despite these challenges, I led end-to-end research, workflow analysis, IA, automation design, and implementation across Jira Service Desk and a supporting static site.
         </p>
       </section>
 
+      <!-- PROBLEM -->
       <section id="problem" class="case-section">
         <h2>Problem</h2>
-        <p>
-          Multiple teams were working toward the same goal but had no unified source of truth. Information lived across Teams, Slack, email, and scattered documentation sites, with no clear ownership or version control.
-        </p>
+        <p>The onboarding process was slow, unclear, and heavily manual.</p>
         <ul>
-          <li>No reliable place to confirm requirements, system status, or decisions.</li>
-          <li>Duplicated work and overlapping efforts between teams.</li>
-          <li>Service requests sent via ad-hoc chats and emails with no tracking.</li>
-          <li>PI Planning events repeatedly surfaced confusion around roles, responsibilities, and cross-team dependencies.</li>
+          <li>Outdated and redundant paperwork; unclear instructions.</li>
+          <li>Users didn’t know what forms applied to them or where to submit them.</li>
+          <li>Internal teams lacked defined requirements for each user type.</li>
+          <li>No centralized hub, no tracking, no standardized communication.</li>
+          <li>Access requests required multiple handoffs with no structure.</li>
         </ul>
         <p>
-          Without a central hub, confusion, delays, and operational risk would continue to grow as more teams joined the effort.
+          Onboarding took <strong>2–3 weeks</strong>, required <strong>15 manual steps</strong>, and demanded <strong>3–4 hours</strong> of internal team time per user. With 27+ new users per month, the process was no longer sustainable.
         </p>
       </section>
 
+      <!-- PROCESS -->
       <section id="process" class="case-section">
         <h2>Process</h2>
 
         <h3>Research</h3>
         <ul>
-          <li>Interviewed engineers, stakeholders, and leadership to understand information needs and communication patterns.</li>
-          <li>Ran short surveys to validate assumptions at scale.</li>
-          <li>Audited existing documentation and observed PI Planning sessions to identify gaps, overlaps, and bottlenecks.</li>
-          <li>Key insight: there was no standardized way to document, discover, or update critical information, and no clear path for requesting support.</li>
+          <li>Interviewed internal teams to understand constraints and workflow gaps.</li>
+          <li>Interviewed recently onboarded users to capture pain points.</li>
+          <li>Shadowed onboarding sessions and conducted a self-onboarding walkthrough.</li>
+          <li>Mapped paperwork requirements and analyzed every touchpoint.</li>
+        </ul>
+
+        <h3>Key Insights</h3>
+        <ul>
+          <li>Paperwork requirements were unclear and inconsistent by role.</li>
+          <li>Users did not know where to submit documentation or what steps came next.</li>
+          <li>Internal teams lacked checklists, workflows, and entitlement clarity.</li>
+          <li>Sensitive information was sent via insecure or inconsistent channels.</li>
         </ul>
 
         <h3>Exploration</h3>
         <ul>
-          <li>Used Mural to cluster pain points into themes that directly mapped to portal content (features, links, status, support).</li>
-          <li>Explored multiple IA options to align with how users naturally search for information.</li>
-          <li>Created low-fidelity wireframes and an interactive prototype to quickly validate structure and navigation with users and stakeholders.</li>
-          <li>For the MVP, chose a centralized static portal that automatically opens as the primary entry point when users log in.</li>
+          <li>Mapped current-state and future-state processes end-to-end.</li>
+          <li>Identified microprocesses for automation and simplification.</li>
+          <li>Created standardized checklists integrated into Jira Service Desk.</li>
+          <li>Designed role-based pathways and automated routing triggers.</li>
+          <li>Developed supporting static site for delivering accurate, role-specific instructions.</li>
         </ul>
 
         <h3>Validation</h3>
         <ul>
-          <li>Ran usability tests and feedback sessions with cross-functional teams.</li>
-          <li>Users strongly favored the clear structure, predictable navigation, and single place to start their day.</li>
-          <li>Feature requests (e.g., more advanced modules and deeper integrations) were captured and prioritized into a backlog for future iterations due to MVP scope and timeline.</li>
+          <li>Tested the new flow with recently onboarded users through surveys and walkthroughs.</li>
+          <li>Ran internal scenarios to validate role-based logic and entitlement routing.</li>
+          <li>Platform teams confirmed they finally received complete, accurate information upfront.</li>
         </ul>
       </section>
 
+      <!-- SOLUTION -->
       <section id="solution" class="case-section">
         <h2>Solution</h2>
         <p>
-          The final solution is a centralized, front-facing user portal that serves as the single source of truth for project information, system status, and support.
+          A role-based, automated onboarding system combining Jira Service Desk workflows with a centralized static information site. The solution removed unnecessary steps, improved clarity, and reduced dependency on manual coordination.
         </p>
         <ul>
-          <li><strong>Single entry point:</strong> Portal auto-launches on login, establishing a consistent starting place for all users.</li>
-          <li><strong>Organized content:</strong> Clear sections for documentation, system status, updates, and key links based on user mental models.</li>
-          <li><strong>Integrated support:</strong> Built-in service desk entry to replace untracked chat and email requests.</li>
-          <li><strong>Scalable framework:</strong> Structure designed to easily add new features and content as needs evolve.</li>
+          <li>Centralized onboarding hub</li>
+          <li>Role-based pathways and instructions</li>
+          <li>Automated triggers and confirmations</li>
+          <li>Standardized digital forms</li>
+          <li>Secure upload workflow</li>
+          <li>Internal team checklists in Jira</li>
+          <li>Automated entitlement routing</li>
         </ul>
       </section>
 
+      <!-- IMPACT -->
       <section id="impact" class="case-section">
         <h2>Impact</h2>
         <ul>
-          <li>200+ portal visits per day for system status, documentation, and key resources.</li>
-          <li>Service desk requests grew from 0 to ~35 tickets per day with clear tracking and ownership.</li>
-          <li>Communication consolidated from four platforms into one primary channel.</li>
-          <li>Time to find information dropped from ~20–30 minutes to about 2 minutes.</li>
-          <li>Improved cross-team visibility reduced duplicated effort and confusion around roles and responsibilities.</li>
+          <li><strong>Onboarding time reduced from 2–3 weeks to ~2 days.</strong></li>
+          <li>Emails reduced from 7 per user to just 2 (intro + confirmation).</li>
+          <li>Manual steps reduced from 15 to 4.</li>
+          <li>Internal entitlement teams received accurate role-based info upfront.</li>
+          <li>Users reported extremely high satisfaction through follow-up surveys.</li>
         </ul>
       </section>
 
+      <!-- REFLECTION -->
       <section id="reflection" class="case-section">
         <h2>Reflection</h2>
         <ul>
-          <li><strong>What I’d do next:</strong> Add role-based personalization, deeper integrations with service management tools, and analytics dashboards to continuously optimize content and navigation.</li>
-          <li><strong>Tradeoffs and constraints:</strong> A 12-week timeline and single-designer model meant focusing on core value first and deferring advanced features to future releases.</li>
-          <li><strong>What I learned:</strong> Centralizing information and clarifying ownership can be just as impactful as new features. Tight, end-to-end execution under constraints reinforced the value of prioritization, stakeholder alignment, and iterative delivery.</li>
+          <li><strong>What I’d do next:</strong> Integrate agentic AI to answer user questions, detect onboarding events, route forms automatically, and guide onboarding inside the platform.</li>
+          <li><strong>Tradeoffs:</strong> Permissions limitations, environment constraints, and dependency on internal team workflows shaped the scope of this MVP.</li>
+          <li><strong>What I learned:</strong> Onboarding defines the first impression. Clear workflows, automation, and role-based logic dramatically improve speed, accuracy, and user confidence.</li>
         </ul>
       </section>
 
       <footer class="case-nav">
         <a class="button secondary" href="index.html#work">← Back to Work</a>
       </footer>
+
     </article>
   </main>
 
@@ -153,5 +173,6 @@
       <button class="chat-send" type="submit">Send</button>
     </form>
   </div>
+
 </body>
 </html>

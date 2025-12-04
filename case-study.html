@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Case Study – User Portal | Hugo</title>
-  <meta name="description" content="Deep dive into the UX process, decisions, and outcomes for this project." />
+  <meta name="description" content="Concise UX case study for a centralized user portal." />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -22,10 +22,12 @@
     <article class="case-article">
       <header class="case-hero">
         <h1>User Portal</h1>
-        <p class="case-subtitle">This project established a centralized hub where users could access information, communicate, request support, and perform key job-related tasks.</p>
+        <p class="case-subtitle">
+          Centralized hub where engineers and stakeholders access information, communicate, request support, and perform key job-related tasks.
+        </p>
         <ul class="chips">
           <li>Role: UX Lead</li>
-          <li>Focus: Research, Design, development and testing.</li>
+          <li>Focus: Research, Design, Development, Testing</li>
           <li>Timeline: 12 weeks</li>
         </ul>
         <img class="case-hero-img" src="img/whereami.png" alt="Confusing crossroads image" />
@@ -42,64 +44,87 @@
 
       <section id="overview" class="case-section">
         <h2>Overview</h2>
-        <p>This project focused on designing a front-facing static user portal for engineers, analysts, program managers, and leadership. Its primary objective was to consolidate information, documentation, communication, resources, and updates into a single, accessible location. <br><br>
-           The effort supported key organizational goals by improving operational efficiency, reducing support overhead, and establishing a dependable source of truth across teams. I identified the core issues by uncovering communication gaps, outdated resources, and a lack of clear points of contact for various requests. <br><br>
-           Through user conversations and research, I mapped out chokepoints and defined a path toward a unified solution. The portal quickly became a widely used destination for accurate information, Tier 1 helpdesk support, and streamlined communication.<br><br>
-           The project operated under significant technical and resource constraints, as I was responsible for the full UX lifecycle—including research, wireframing, design, testing, and front-end development. <br><br>
-           Delivered within a 12-week window, the work involved close collaboration with various users and stakeholders, while cross-functional partners ensured compliance and security requirements were met. Despite the limitations, the portal provided measurable value and improved clarity, accessibility, and operational flow across the organization.<br><br>
+        <p>
+          Designed a front-facing static user portal for engineers, analysts, program managers, and leadership. The portal consolidates documentation, system status, communications, and service requests into a single, accessible entry point.
+        </p>
+        <p>
+          Led the full UX lifecycle—research, information architecture, wireframes, prototypes, usability testing, and front-end implementation—within a 12-week window. Cross-functional partners supported compliance and security alignment, while I focused on clarity, findability, and adoption.
         </p>
       </section>
 
       <section id="problem" class="case-section">
         <h2>Problem</h2>
-        <p>Multiple teams were working toward the same overarching goal but lacked a reliable, unified source of truth. Critical project requirements were not being communicated accurately or consistently, leading to widespread confusion across engineering and stakeholder groups. With information scattered across Teams, Slack, email, and various platforms—some of which certain users couldn’t access—there was no dependable location to consult for up-to-date documentation, project status, or key decisions. Teams also had no visibility into each other’s work, causing duplicated efforts and unintentional overlap. Service requests were sent informally through chats and emails, making them difficult to track, prioritize, or resolve efficiently. Together, these issues created significant delays in development, slowed decision-making, and increased operational friction.<br><br>
-           The need for unification became urgent as frustrations continued to escalate across users, teams, and stakeholders. Quarterly PI Planning events repeatedly highlighted major chokepoints, with teams struggling to clarify their roles, responsibilities, and cross-team dependencies. Confusion routinely overshadowed these planning sessions, limiting meaningful progress and exposing the lack of a centralized location for accurate, validated information. Although updates were being shared, there was no structured home for them, making alignment increasingly difficult.<br><br>
-           Without addressing this problem, teams would continue to operate in confusion, with severe overlap in responsibilities and increasing duplication of work. The ongoing absence of a shared source of truth would further diminish visibility into the overall mission, leaving users uncertain about where to communicate or which information to trust. Over time, these gaps would widen, slowing progress, increasing operational risk, and making coordinated development nearly impossible.<br><br>
-           After launch, the portal demonstrated clear and measurable impact. It now receives more than 200 visits per day as users search for information, verify system status, and access authoritative links. Service desk submissions increased from zero to an average of 35 tickets per day, creating a reliable, trackable channel for support. Communication methods were consolidated from four platforms into one, greatly reducing coordination time. Users reported saving 20–30 minutes per task, with information searches now taking as little as two minutes—reflecting significant gains in clarity, efficiency, and alignment across the organization.<br><br>
-
+        <p>
+          Multiple teams were working toward the same goal but had no unified source of truth. Information lived across Teams, Slack, email, and scattered documentation sites, with no clear ownership or version control.
+        </p>
+        <ul>
+          <li>No reliable place to confirm requirements, system status, or decisions.</li>
+          <li>Duplicated work and overlapping efforts between teams.</li>
+          <li>Service requests sent via ad-hoc chats and emails with no tracking.</li>
+          <li>PI Planning events repeatedly surfaced confusion around roles, responsibilities, and cross-team dependencies.</li>
+        </ul>
+        <p>
+          Without a central hub, confusion, delays, and operational risk would continue to grow as more teams joined the effort.
         </p>
       </section>
 
       <section id="process" class="case-section">
         <h2>Process</h2>
+
         <h3>Research</h3>
         <ul>
-          <li>Methods: To understand the core challenges, I conducted interviews with multiple user groups, engineering teams, stakeholders, and leadership. Short surveys helped validate early assumptions and gather broader input across the organization. I performed documentation audits to evaluate existing resources and identify inconsistencies, and I observed several PI Planning sessions and daily workflows to capture real behaviors, bottlenecks, and cross-team interactions.</li>
-          <li>Key insights: Research revealed that communication was highly decentralized, with no consistent method for sharing information or coordinating work. Documentation lacked standardization—users didn’t know where it lived, how to update it, or which version was reliable. Service requests were scattered across chats and emails, making them difficult to track or resolve. Teams frequently duplicated effort due to unclear responsibilities and overlapping work, leading to frustration, delays, and a lack of visibility into project progress. These insights established the need for a centralized, authoritative source of truth.</li>
+          <li>Interviewed engineers, stakeholders, and leadership to understand information needs and communication patterns.</li>
+          <li>Ran short surveys to validate assumptions at scale.</li>
+          <li>Audited existing documentation and observed PI Planning sessions to identify gaps, overlaps, and bottlenecks.</li>
+          <li>Key insight: there was no standardized way to document, discover, or update critical information, and no clear path for requesting support.</li>
         </ul>
+
         <h3>Exploration</h3>
-        <p>Using Mural, I synthesized all identified pain points and grouped them into themes that translated directly into potential portal content such as features, resource links, and communication channels. These clusters provided a clear foundation for what the portal needed to include and how it should function.<br><br>
-           Next, I explored multiple information architecture options to determine the most intuitive and accessible structure. The goal was to align with users’ natural mental models and make it easy to locate key information. Once the IA was defined, I created low-fidelity wireframes and a quick interactive prototype to demonstrate the concept to users and stakeholders, enabling rapid feedback and early alignment.<br><br>
-           For the MVP, I selected a centralized static portal designed to automatically open as the primary entry point when users logged in. This approach positioned it as the single source of truth for essential updates, documentation, and communication. A high-fidelity prototype was later developed as a proof of concept to solidify stakeholder confidence and guide development.</p><br><br>
+        <ul>
+          <li>Used Mural to cluster pain points into themes that directly mapped to portal content (features, links, status, support).</li>
+          <li>Explored multiple IA options to align with how users naturally search for information.</li>
+          <li>Created low-fidelity wireframes and an interactive prototype to quickly validate structure and navigation with users and stakeholders.</li>
+          <li>For the MVP, chose a centralized static portal that automatically opens as the primary entry point when users log in.</li>
+        </ul>
+
         <h3>Validation</h3>
-        <p>I validated the solution through usability tests, stakeholder reviews, and iterative feedback sessions with all involved teams. Users responded positively to the portal’s look and feel and appreciated the clarity of its structure and navigation. The centralized layout supported the way they naturally searched for information, reinforcing that the design direction was strong.<br><br>
-           Several feature requests emerged during these sessions. Many of these enhancements had already been considered, but due to MVP delivery constraints, they were added to a backlog for future iterations. This validation confirmed the effectiveness of the initial build while providing a clear roadmap for continued growth and refinement.</p><br><br>
+        <ul>
+          <li>Ran usability tests and feedback sessions with cross-functional teams.</li>
+          <li>Users strongly favored the clear structure, predictable navigation, and single place to start their day.</li>
+          <li>Feature requests (e.g., more advanced modules and deeper integrations) were captured and prioritized into a backlog for future iterations due to MVP scope and timeline.</li>
+        </ul>
       </section>
 
       <section id="solution" class="case-section">
         <h2>Solution</h2>
-        <p>The solution was a centralized, front-facing static user portal designed to serve as the single source of truth for engineers, stakeholders, and leadership. Its purpose was to unify information, streamline communication, reduce duplication of effort, and create a consistent, reliable entry point for project-related activities. The portal consolidated documentation, system status updates, key resources, and service desk functionality into one accessible location, eliminating the fragmentation caused by multiple tools and channels.<br><br>
-           The portal’s structure centered around clarity and ease of navigation. Core content areas were organized based on user mental models and validated research insights, ensuring that users could quickly find what they needed without navigating through scattered platforms. The design emphasized a simple, intuitive layout that supported high-frequency actions, such as checking system status, locating project requirements, or submitting service tickets.<br><br>
-           To reinforce adoption and make the portal a natural part of the workflow, it was configured to open automatically as the primary entry point when users logged in. This positioned it as the central hub for information and collaboration, reducing reliance on outdated documents and ad-hoc communication patterns. The solution also included a scalable framework that allowed new features and content to be added over time as the organization’s needs evolved.<br><br>
-           Overall, the portal delivered a unified experience that restored clarity, improved cross-team alignment, and provided a dependable foundation for ongoing development activities.</p><br><br>
+        <p>
+          The final solution is a centralized, front-facing user portal that serves as the single source of truth for project information, system status, and support.
+        </p>
+        <ul>
+          <li><strong>Single entry point:</strong> Portal auto-launches on login, establishing a consistent starting place for all users.</li>
+          <li><strong>Organized content:</strong> Clear sections for documentation, system status, updates, and key links based on user mental models.</li>
+          <li><strong>Integrated support:</strong> Built-in service desk entry to replace untracked chat and email requests.</li>
+          <li><strong>Scalable framework:</strong> Structure designed to easily add new features and content as needs evolve.</li>
+        </ul>
       </section>
 
       <section id="impact" class="case-section">
         <h2>Impact</h2>
         <ul>
-          <li><strong>Outcome:</strong> The portal delivered immediate and measurable improvements across communication, efficiency, and operational clarity. By centralizing information and standardizing how updates, documentation, and service requests were managed, it significantly reduced confusion and eliminated many of the bottlenecks that had previously slowed development.<br><br>
-       The portal now receives more than 200 visits per day as users check system status, access authoritative documentation, and navigate to key project resources. Service desk submissions grew from zero to an average of 35 tickets per day, establishing a clear, trackable process for user support and reducing the burden on informal communication channels.<br><br>
-       Consolidating communication from four separate platforms into a single channel streamlined coordination and reduced the time required to align across teams. Users reported saving 20–30 minutes per task, with information retrieval dropping from lengthy searches to as little as two minutes. This efficiency gain translated into more productive work cycles and fewer delays caused by misinformation or duplicated effort.<br><br>
-       Beyond quantitative improvements, the portal also strengthened cross-team relationships by creating transparency around roles, responsibilities, and ongoing work. It provided teams with a dependable foundation for planning, execution, and collaboration—ultimately supporting smoother development cycles and more informed decision-making across the organization.</li><br><br>
+          <li>200+ portal visits per day for system status, documentation, and key resources.</li>
+          <li>Service desk requests grew from 0 to ~35 tickets per day with clear tracking and ownership.</li>
+          <li>Communication consolidated from four platforms into one primary channel.</li>
+          <li>Time to find information dropped from ~20–30 minutes to about 2 minutes.</li>
+          <li>Improved cross-team visibility reduced duplicated effort and confusion around roles and responsibilities.</li>
         </ul>
       </section>
 
       <section id="reflection" class="case-section">
         <h2>Reflection</h2>
         <ul>
-          <li>What I’d do next: <br><br> Future iterations of the portal would focus on expanding its functionality and continually refining the user experience. Several feature requests surfaced during usability testing, and many were intentionally prioritized into the backlog to maintain a focused MVP. Enhancements such as more dynamic content modules, role-based personalization, deeper integration with service management systems, and automated update workflows would further improve clarity and reduce operational friction. I would also introduce ongoing analytics dashboards to monitor usage patterns and identify new opportunities for optimization.</li><br>
-          <li>Tradeoffs and constraints <br><br> The project operated under a tight 12-week timeline and limited resources, requiring careful prioritization of scope. To deliver a reliable MVP, I made strategic decisions to focus on core functionality rather than broader advanced features. This meant some highly requested capabilities were deferred to later releases. Handling the full UX lifecycle independently—from research and information architecture to wireframing, prototyping, and development—also required balancing depth with speed. Despite these constraints, the final solution delivered meaningful value and created a scalable foundation for future growth.</li><br>
-          <li>What I learned: <br><br> This project reinforced the importance of deeply understanding cross-team dynamics and the operational impact of unclear communication channels. I learned how essential it is to identify not just individual pain points but also the systemic patterns that amplify them across large organizations. Running an end-to-end process highlighted the value of rapid iteration, early alignment with stakeholders, and clear prioritization under constrained timelines. Most importantly, I saw firsthand how a well-designed, centralized experience can transform organizational clarity, reduce friction, and create a shared foundation for teams working toward a common goal.</li><br>
+          <li><strong>What I’d do next:</strong> Add role-based personalization, deeper integrations with service management tools, and analytics dashboards to continuously optimize content and navigation.</li>
+          <li><strong>Tradeoffs and constraints:</strong> A 12-week timeline and single-designer model meant focusing on core value first and deferring advanced features to future releases.</li>
+          <li><strong>What I learned:</strong> Centralizing information and clarifying ownership can be just as impactful as new features. Tight, end-to-end execution under constraints reinforced the value of prioritization, stakeholder alignment, and iterative delivery.</li>
         </ul>
       </section>
 
@@ -111,22 +136,22 @@
 
   <footer class="footer">© <span id="year"></span> Hugo — UX Portfolio</footer>
   <script src="script.js"></script>
-  
-    <!-- Chat widget -->
-<div id="chatFab" aria-label="Open chat" title="Chat">💬</div>
 
-<div id="chatPanel" role="dialog" aria-modal="true" aria-labelledby="chatTitle" hidden>
-  <header class="chat-header">
-    <h3 id="chatTitle">Chat</h3>
-    <button id="chatClose" aria-label="Close chat">✕</button>
-  </header>
+  <!-- Chat widget -->
+  <div id="chatFab" aria-label="Open chat" title="Chat">💬</div>
 
-  <div id="chatLog" class="chat-log" aria-live="polite"></div>
+  <div id="chatPanel" role="dialog" aria-modal="true" aria-labelledby="chatTitle" hidden>
+    <header class="chat-header">
+      <h3 id="chatTitle">Chat</h3>
+      <button id="chatClose" aria-label="Close chat">✕</button>
+    </header>
 
-  <form id="chatForm" class="chat-form" autocomplete="off">
-    <input id="chatInput" type="text" placeholder="Type your message…" required />
-    <button class="chat-send" type="submit">Send</button>
-  </form>
-</div>
+    <div id="chatLog" class="chat-log" aria-live="polite"></div>
+
+    <form id="chatForm" class="chat-form" autocomplete="off">
+      <input id="chatInput" type="text" placeholder="Type your message…" required />
+      <button class="chat-send" type="submit">Send</button>
+    </form>
+  </div>
 </body>
 </html>
