@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Case Study – User Success Service Desk | Hugo</title>
+  <meta name="description" content="Deep dive into the UX process, decisions, and outcomes for this project." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/">Hugo</a>
+    <nav class="nav">
+      <a href="index.html#work">Work</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#contact">Contact</a>
+      <button id="themeToggle" class="toggle" aria-label="Toggle theme">🌙</button>
+    </nav>
+  </header>
+
+  <main class="case">
+    <article class="case-article">
+      <header class="case-hero">
+        <h1>User Portal</h1>
+        <p class="case-subtitle">created to connect multiple sets of user types by providing information, resources, news, and a means to consolidated tier one support and communications.</p>
+        <ul class="chips">
+          <li>Role: UX Lead</li>
+          <li>Focus: Research, Design, development and testing.</li>
+          <li>Timeline: 12 weeks</li>
+        </ul>
+        <img class="case-hero-img" src="img/whereami.png" alt="Confusing crossroads image" />
+      </header>
+
+      <nav class="case-toc">
+        <a href="#overview">Overview</a>
+        <a href="#problem">Problem</a>
+        <a href="#process">Process</a>
+        <a href="#solution">Solution</a>
+        <a href="#impact">Impact</a>
+        <a href="#reflection">Reflection</a>
+      </nav>
+
+      <section id="overview" class="case-section">
+        <h2>Overview</h2>
+        <p>Brief summary of the project, the audience, and business context. Mention constraints (timeline, resources, compliance, etc.).
+
+        </p>
+      </section>
+
+      <section id="problem" class="case-section">
+        <h2>Problem</h2>
+        <p>What problem were we solving? Why now? What happened if we didn’t solve it? Add baseline metrics if available.
+
+        </p>
+      </section>
+
+      <section id="process" class="case-section">
+        <h2>Process</h2>
+        <h3>Research</h3>
+        <ul>
+          <li>Methods: interviews, surveys, heuristic review, analytics</li>
+          <li>Key insights: pain points, unmet needs, mental models</li>
+        </ul>
+        <h3>Exploration</h3>
+        <p>Sketches, IA options, user flows, wireframes. Include images or GIFs.</p>
+        <h3>Validation</h3>
+        <p>Usability test findings, iterations, what changed and why.</p>
+      </section>
+
+      <section id="solution" class="case-section">
+        <h2>Solution</h2>
+        <p>Final designs (screens, prototype video). Explain decisions with callouts: why this pattern, how it solves a pain point.</p>
+      </section>
+
+      <section id="impact" class="case-section">
+        <h2>Impact</h2>
+        <ul>
+          <li><strong>Outcome metrics:</strong> e.g., “Time to complete task ↓ 32%”, “NPS +12”, “Support tickets −18%”.</li>
+          <li><strong>Business result:</strong> e.g., adoption, conversion, revenue, internal efficiency.</li>
+        </ul>
+      </section>
+
+      <section id="reflection" class="case-section">
+        <h2>Reflection</h2>
+        <ul>
+          <li>What I’d do next</li>
+          <li>Tradeoffs and constraints</li>
+          <li>What I learned</li>
+        </ul>
+      </section>
+
+      <footer class="case-nav">
+        <a class="button secondary" href="index.html#work">← Back to Work</a>
+      </footer>
+    </article>
+  </main>
+
+  <footer class="footer">© <span id="year"></span> Hugo — UX Portfolio</footer>
+  <script src="script.js"></script>
+  
+    <!-- Chat widget -->
+<div id="chatFab" aria-label="Open chat" title="Chat">💬</div>
+
+<div id="chatPanel" role="dialog" aria-modal="true" aria-labelledby="chatTitle" hidden>
+  <header class="chat-header">
+    <h3 id="chatTitle">Chat</h3>
+    <button id="chatClose" aria-label="Close chat">✕</button>
+  </header>
+
+  <div id="chatLog" class="chat-log" aria-live="polite"></div>
+
+  <form id="chatForm" class="chat-form" autocomplete="off">
+    <input id="chatInput" type="text" placeholder="Type your message…" required />
+    <button class="chat-send" type="submit">Send</button>
+  </form>
+</div>
+</body>
+</html>
